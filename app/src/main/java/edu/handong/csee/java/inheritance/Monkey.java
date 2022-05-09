@@ -1,0 +1,13 @@
+package edu.handong.csee.java.inheritance;
+
+public class Monkey extends Animal{
+	String name = "Monkey";
+	 public static void testClassMethod() {
+	        System.out.println("The static method in Monkey");
+	    }
+	 @Override
+	    public void testInstanceMethod() {
+	        System.out.println("The instance method in Monkey");
+	    }
+
+}
