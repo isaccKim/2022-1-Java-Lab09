@@ -13,16 +13,17 @@ public class Cat extends Animal {
 
     public static void main(String[] args) {
         Cat myCat = new Cat();
-       
         Animal myAnimal = myCat;  //polymorphism
         Animal.testClassMethod(); // hiding
         myAnimal.testInstanceMethod(); //overriding
         
-        Animal myAnimal2 = new Dog(); //polymorphism
+        Dog myDog = new Dog();
+        Animal myAnimal2 = myDog; //polymorphism
         Animal.testClassMethod(); // hiding
         myAnimal2.testInstanceMethod(); // overriding
         
-        Animal myAnimal3 = new Monkey();  //polymorphism
+        Monkey myMonkey = new Monkey();
+        Animal myAnimal3 =  myMonkey;  //polymorphism
         Animal.testClassMethod(); // hiding
         myAnimal3.testInstanceMethod(); // overriding
      
