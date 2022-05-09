@@ -13,8 +13,6 @@ public class Cat extends Animal {
 
     public static void main(String[] args) {
         Cat myCat = new Cat();
-        myCat.testClassMethod(); // hiding
-        myCat.testInstanceMethod(); // overriding
        
         Animal myAnimal = myCat;  //polymorphism
         Animal.testClassMethod(); // hiding
